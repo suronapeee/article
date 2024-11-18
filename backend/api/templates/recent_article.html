@@ -1,0 +1,11 @@
+<div>
+    <a href="{% url 'home' %}">Home Page</a>
+    {% if ra|length > 0 %}
+    <h2>Recently Viewed Article:</h2>
+    <ul>
+        {% for title, url in ra.items %}
+            <li><a href="{{url}}"></a>{{title}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>

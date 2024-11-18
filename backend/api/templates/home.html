@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<h3>All Articles</h3>
+<ui>
+    <li><a href="{% url 'article1' %}">Article1</a></li>
+    <li><a href="{% url 'article2' %}">Article2</a></li>
+    <li><a href="{% url 'article3' %}">Article3</a></li>
+    <li><a href="{% url 'article4' %}">Article4</a></li>
+    <li><a href="{% url 'article5' %}">Article5</a></li>
+</ui>
+{% endblock %}

@@ -1,0 +1,7 @@
+version: 0.1
+endpoints:
+  - name: 'article'
+    port:8000
+    type: REST
+    networkVisibility: Public
+    context:/
